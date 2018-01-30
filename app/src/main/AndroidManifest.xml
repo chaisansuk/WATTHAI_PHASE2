@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ch.manit.watthai">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon1"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.ch.manit.watthai.indexactivity.activity.SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <activity
+            android:name="com.ch.manit.watthai.indexactivity.activity.MainStartActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.ch.manit.watthai.indexactivity.map.MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.activity.HomeActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.WebhelpMapActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.news.NewsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.news.NewsWatActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.news.NewsWatn1Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.news.NewsWatn2Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.news.NewsWatn3Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.news.NewsWatn4Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.news.NewsWatn5Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.news.NewsWatn6Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.news.NewsWatn7Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.news.NewsWatn8Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.news.NewsWatn9Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.news.NewsWatn10Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.news.NewsWatn11Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.news.NewsWatn12Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.news.NewsWatn13Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.news.NewsWatn14Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.news.NewsWatn15Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.news.NewsWatn16Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.news.NewsWatn17Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.news.NewsWatn18Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.news.NewsWatn19Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.news.NewsWatn20Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.news.NewsWatn21Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.news.NewsWatn22Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.news.NewsWatn23Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.news.NewsWatn24Activity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.watrat.WatkajubphinijActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.phaaramluang.WatbuppharhrmActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.phaaramluang.WatkanrayanamitActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.watrat.WatbangsaikaiActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.watrat.WatgheycheesuphanActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.phaaramluang.WathiranrugeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.watrat.WatkrangdowActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.watrat.WatkanthatarararmActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.phaaramluang.WatjantarrarmvoraviharnActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.watrat.WatdowkanorngActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.watrat.WatbangnamchonActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.watrat.WatbangsachaenorkActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.watrat.WatbangsachaenaiActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.watrat.WatbukkarowActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.watrat.WatphadittharramActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.phaaramluang.WatprayutrawongsarvarsvoraviharnActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.phaaramluang.WatphonimitsatitmaharsremararmActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.phaaramluang.WatrajakruvoraviharnActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.watrat.WatrajwarinActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.watrat.WatwararmartayaphanthasarrararmActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.phaaramluang.WatweyrurachinActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.watrat.WatsantithammararmActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.watrat.WatsuttharwharsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.watrat.WatmaiyueynuiActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.phaaramluang.WatintararmvoraviharnActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,219 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:background="#d2be85" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="WATTHAI"
+                android:textColor="@color/black"
+                android:textSize="60dp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:background="@drawable/ic_backspace_orange_50_18dp"
+                android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="จุดเริ่มต้น"
+                android:textSize="60dp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Lat"
+            android:id="@+id/textView"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:layout_weight="0.5" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textView2"
+            android:textSize="40dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_weight="1.5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Lng"
+            android:id="@+id/textView3"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:layout_weight="0.5" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textView4"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:layout_weight="1.5" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:measureWithLargestChild="false"
+        android:longClickable="false"
+        android:clickable="false"
+        android:background="@color/white">
+        <RelativeLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="ปลายทาง"
+                android:textSize="60dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentRight="false"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_alignParentLeft="true"
+                android:background="@color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <fragment
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/map"
+            tools:context=".MapsActivity"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_alignBottom="@+id/Btype"
+            android:layout_alignParentBottom="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout">
+
+        </LinearLayout>
+
+        <ImageButton
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="+"
+            android:id="@+id/Bzoomin"
+            android:src="@drawable/ic_zoom_in_red_50_18dp"
+            android:layout_gravity="center_vertical"
+            android:onClick="onZoom"
+            android:enabled="true"
+            android:contentDescription="@string/on"
+            android:layout_above="@+id/Bzoomout"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true" />
+
+        <ImageButton
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="-"
+            android:id="@+id/Bzoomout"
+            android:src="@drawable/ic_zoom_out_red_50_18dp"
+            android:layout_gravity="center_vertical"
+            android:onClick="onZoom"
+            android:enabled="true"
+            android:contentDescription="@string/drop"
+            android:layout_alignWithParentIfMissing="false"
+            android:adjustViewBounds="false"
+            android:baselineAlignBottom="false"
+            android:clickable="false"
+            android:cropToPadding="false"
+            android:focusableInTouchMode="false"
+            android:layout_marginBottom="377dp"
+            android:layout_above="@+id/Btype"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/maptype"
+            android:id="@+id/Btype"
+            android:onClick="changeType"
+            android:textSize="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="false"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_alignParentLeft="false"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

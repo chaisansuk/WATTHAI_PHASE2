@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">WATTHAI</string>
+    <string name="title_activity_maps">WATTHAI</string>
+    <string name="title_activity_main">WATTHAI</string>
+    <string name="on">on</string>
+    <string name="drop">drop</string>
+    <string name="maptype">HYBRID</string>
+    <string name="start">Start</string>
+    <string name="map">MAP</string>
+    <string name="history">Back</string>
+    <string name="Lat">ละติจูด  :</string>
+    <string name="Lng">ลองติจูด :</string>
+
+
+</resources>

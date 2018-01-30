@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".indexactivity.activity.HomeActivity">
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#d2be85" >
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="WATTHAI"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_backspace_orange_50_18dp"
+            android:background="#d2be85"
+            android:layout_alignParentLeft="true"/>
+        <ImageButton
+            android:id="@+id/help"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/world"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <TabWidget
+        android:id="@android:id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+          </TabWidget>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp">
+
+            <LinearLayout
+                android:id="@+id/watrat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/scrollView2">
+
+                        <GridLayout
+                            xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageButton
+                                android:id="@+id/btn_watgheycheesuphan"
+                                android:background="@drawable/n0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_row="0"
+                                android:layout_column="0"/>
+                            <ImageButton
+                                android:id="@+id/btn_watbangsaikai"
+                                android:background="@drawable/n1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_row="1"
+                                android:layout_column="0"/>
+                            <ImageButton
+                                android:id="@+id/btn_watkajubphinij"
+                                android:background="@drawable/n2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_row="2"
+                                android:layout_column="0"/>
+                            <ImageButton
+                                android:id="@+id/btn_watkrangdow"
+                                android:background="@drawable/n3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_row="3"
+                                android:layout_column="0"/>
+                            <ImageButton
+                                android:id="@+id/btn_watkanthatarararm"
+                                android:background="@drawable/n4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_row="4"
+                                android:layout_column="0"/>
+                            <ImageButton
+                                android:id="@+id/btn_watdowkanorng"
+                                android:background="@drawable/n5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_row="5"
+                                android:layout_column="0"/>
+                            <ImageButton
+                                android:id="@+id/btn_watbangnamchon"
+                                android:background="@drawable/n6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_row="6"
+                                android:layout_column="0"/>
+                            <ImageButton
+                                android:id="@+id/btn_watbangsachaenork"
+                                android:background="@drawable/n7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_row="7"
+                                android:layout_column="0"/>
+                            <ImageButton
+                                android:id="@+id/btn_watbangsachaenai"
+                                android:background="@drawable/n8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_row="8"
+                                android:layout_column="0"/>
+                            <ImageButton
+                                android:id="@+id/btn_watbukkarow"
+                                android:background="@drawable/n9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_row="9"
+                                android:layout_column="0"/>
+                            <ImageButton
+                                android:id="@+id/btn_watphadittharram"
+                                android:background="@drawable/n10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_row="10"
+                                android:layout_column="0"/>
+                            <ImageButton
+                                android:id="@+id/btn_watrajwarin"
+                                android:background="@drawable/n11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_row="11"
+                                android:layout_column="0"/>
+                            <ImageButton
+                                android:id="@+id/btn_watwararmartayaphanthasarrararm"
+                                android:background="@drawable/n12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_row="12"
+                                android:layout_column="0"/>
+                            <ImageButton
+                                android:id="@+id/btn_watsantithammararm"
+                                android:background="@drawable/n13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_row="13"
+                                android:layout_column="0"/>
+                            <ImageButton
+                                android:id="@+id/btn_watsuttharwhars"
+                                android:background="@drawable/n14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_row="14"
+                                android:layout_column="0"/>
+                            <ImageButton
+                                android:id="@+id/btn_watmaiyueynui"
+                                android:background="@drawable/n15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_row="15"
+                                android:layout_column="0"/>
+                        </GridLayout>
+                </ScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/phaaramluang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/scrollView3">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/btn_watkanrayanamit"
+                                android:background="@drawable/n16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_row="0"
+                                android:layout_column="0"/>
+                            <ImageButton
+                                android:id="@+id/btn_watjantarrarmvoraviharn"
+                                android:background="@drawable/n17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_row="1"
+                                android:layout_column="0"/>
+                            <ImageButton
+                                android:id="@+id/btn_watbuppharhrm"
+                                android:background="@drawable/n18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_row="2"
+                                android:layout_column="0" />
+                            <ImageButton
+                                android:id="@+id/btn_watprayutrawongsarvarsvoraviharn"
+                                android:background="@drawable/n19"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_row="3"
+                                android:layout_column="0" />
+                            <ImageButton
+                                android:id="@+id/btn_watphonimitsatitmaharsremararm"
+                                android:background="@drawable/n20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_row="4"
+                                android:layout_column="0" />
+                            <ImageButton
+                                android:id="@+id/btn_watrajakruvoraviharn"
+                                android:background="@drawable/n21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_row="5"
+                                android:layout_column="0" />
+                            <ImageButton
+                                android:id="@+id/btn_watweyrurachin"
+                                android:background="@drawable/n22"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_row="6"
+                                android:layout_column="0" />
+                            <ImageButton
+                                android:id="@+id/btn_wathiranruge"
+                                android:background="@drawable/n23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_row="7"
+                                android:layout_column="0" />
+                            <ImageButton
+                                android:id="@+id/btn_watintararmvoraviharn"
+                                android:background="@drawable/n24"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_row="8"
+                                android:layout_column="0" />
+                        </GridLayout>
+
+
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+</TabHost>
